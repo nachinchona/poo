@@ -1,5 +1,5 @@
 Class {
-	#name : #Cliente,
+	#name : #Cliente2,
 	#superclass : #Object,
 	#instVars : [
 		'dni',
@@ -11,7 +11,7 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-Cliente class >> dni: unDni nombre: unNombre apellido: unApellido cuenta: unaCuenta [
+Cliente2 class >> dni: unDni nombre: unNombre apellido: unApellido cuenta: unaCuenta [
 |unCliente|
 unCliente := self new.
 unCliente inicializarDni: unDni nombre: unNombre apellido: unApellido cuenta: unaCuenta.
@@ -19,12 +19,12 @@ unCliente inicializarDni: unDni nombre: unNombre apellido: unApellido cuenta: un
 ]
 
 { #category : #'as yet unclassified' }
-Cliente >> getNumeroCuenta [
+Cliente2 >> getNumeroCuenta [
 ^ cuenta getNumeroCuenta
 ]
 
 { #category : #'as yet unclassified' }
-Cliente >> inicializarDni: unDni nombre: unNombre apellido: unApellido cuenta: unaCuenta [
+Cliente2 >> inicializarDni: unDni nombre: unNombre apellido: unApellido cuenta: unaCuenta [
 dni := unDni.
 nombre := unNombre .
 apellido := unApellido .
